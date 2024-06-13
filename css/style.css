@@ -143,7 +143,7 @@ p:not(:last-child) {
 }
 
 .about__button::before {
-  content: url(/img/errors-button.svg);
+  content: url(../img/errors-button.svg);
   vertical-align: middle;
   margin-right: 8px;
 }
@@ -153,15 +153,15 @@ p:not(:last-child) {
 }
 
 .button-menu--icon--phone {
-  background-image: url(/img/phone-button.svg);
+  background-image: url(../img/phone-button.svg);
 }
 
 .button-menu--icon--message {
-  background-image: url(/img/message-button.svg);
+  background-image: url(../img/message-button.svg);
 }
 
 .button-menu--icon--contact {
-  background-image: url(/img/contact-button.svg);
+  background-image: url(../img/contact-button.svg);
 }
 
 .buttons-user {
