@@ -391,7 +391,7 @@ p:not(:last-child) {
   gap: 16px;
 }
 
-.sidebar-header__button:hover {
+.sidebar-footer__link:hover {
   transition-duration: 1s;
   opacity: 0.5;
 }
