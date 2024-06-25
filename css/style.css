@@ -146,19 +146,22 @@ p:not(:last-child) {
   color: #1b1c21;
 }
 
-.about__button {
+.button-arrow-scroll {
   font-size: 16px;
   font-weight: 700;
   margin-left: 16px;
   margin-top: 16px;
-
   background-color: #f8f8f8;
 }
 
-.about__button::before {
-  content: url(../img/errors-button.svg);
+.button-arrow-scroll::before {
+  display: inline-block;
+  content: "";
+  background: url(../img/errors-button.svg);
   vertical-align: middle;
   margin-right: 8px;
+  height: 24px;
+  width: 24px;
 }
 
 .about__image {
@@ -192,112 +195,6 @@ p:not(:last-child) {
 
 .main-service__label:hover {
   color: red;
-}
-
-/* Версия планшет */
-
-@media (min-width: 768px) {
-  .buttons-user {
-    display: flex;
-    margin-left: auto;
-    gap: 16px;
-  }
-
-  .header__service-menu {
-    margin-left: 20px;
-  }
-
-  .header__button {
-    margin-right: 20px;
-    position: relative;
-  }
-
-  .button-menu--icon--burger::after {
-    content: "";
-    display: block;
-    height: 32px;
-    position: absolute;
-    right: -20px;
-    top: 50%;
-    translate: -50% -50%;
-    width: 2px;
-    background: #eaeaea;
-  }
-
-  .main-menu__list {
-    margin-top: 32px;
-  }
-
-  .about__text {
-    margin: 0;
-    height: 160px;
-    line-height: 20px;
-  }
-
-  .about {
-    display: flex;
-    gap: 48px;
-  }
-
-  .about__image {
-    min-width: 50%;
-    margin-top: 0;
-    height: auto;
-  }
-
-  .main__about {
-    margin-top: 32px;
-    padding-inline: 24px;
-  }
-}
-
-/* Версия ПК */
-
-@media (min-width: 1120px) {
-  .header {
-    display: none;
-  }
-
-  .main-header__service-menu {
-    display: flex;
-  }
-
-  .main-header {
-    display: flex;
-    align-items: center;
-    margin-top: 42px;
-    margin-right: 25px;
-  }
-  .main__title {
-    margin-top: 0;
-    padding-left: 32px;
-  }
-
-  .service-menu {
-    margin-left: auto;
-  }
-
-  .main-menu__list {
-    overflow: visible;
-    flex-wrap: wrap;
-    padding-inline: 22px;
-    margin-top: 8px;
-    margin-left: 32px;
-    padding-left: 0;
-  }
-
-  .main__about {
-    margin-top: 8px;
-  }
-
-  .about.main__about {
-    padding-left: 32px;
-  }
-  .main-menu__link {
-    padding-left: 22px;
-    padding-right: 19px;
-    box-sizing: border-box;
-  }
 }
 
 /* Боковое раскрывающееся меню  */
@@ -428,4 +325,262 @@ p:not(:last-child) {
 
 .language-block__input:checked + .language-block__text {
   color: #7e7e82;
+}
+
+/* меню брендов */
+
+.brand-menu__title {
+  padding: 16px;
+  font-size: 16px;
+  letter-spacing: 0.2px;
+  line-height: 24px;
+  text-transform: uppercase;
+  color: #7e7e82;
+}
+
+.brand-menu__header {
+  background-image: linear-gradient(to right, #f8f8f8, #ffffff);
+  border-top: 1px solid #d9fff5;
+}
+
+.button-arrow-scroll {
+  display: none;
+}
+
+.brand-main-menu {
+  margin-top: 16px;
+}
+
+.brand-main-menu__item {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  background-color: #ffffff;
+  padding: 16px;
+  height: 72px;
+  border: 1px solid #eaeaea;
+  border-radius: 6px;
+  width: 240px;
+  flex-shrink: 0;
+}
+
+.button-menu--hollow {
+  background-image: url(../img/brand-menu-arrow.svg);
+  background-color: #ffffff;
+  border: 2px solid #ff3e79;
+  padding-right: 16px;
+  margin-left: auto;
+}
+
+.brand-main-menu__list {
+  display: flex;
+  flex-direction: row;
+}
+
+.brand-main-menu::after {
+  content: "";
+  height: 100%;
+  width: 24px;
+  position: absolute;
+  right: 0;
+  top: 0;
+  display: block;
+  z-index: 1;
+  background-image: linear-gradient(
+    270deg,
+    #f8f8f8 0.04%,
+    rgba(248, 248, 248, 0) 100%
+  );
+}
+
+.brand-main-menu--margin--left {
+  margin-left: 16px;
+}
+
+.brand-main-menu {
+  overflow: hidden;
+  position: relative;
+}
+
+.swiper-pagination-bullet {
+  background-color: #dddddd;
+  width: 12px;
+  height: 12px;
+  margin-left: 12px;
+  opacity: 1;
+}
+
+.swiper-pagination-bullet-active {
+  background-color: #b5b6bc;
+}
+
+.pagination-slider {
+  text-align: center;
+  margin-top: 16px;
+}
+
+/* Версия планшет */
+
+@media (min-width: 768px) {
+  .buttons-user {
+    display: flex;
+    margin-left: auto;
+    gap: 16px;
+  }
+
+  .header__service-menu {
+    margin-left: 20px;
+  }
+
+  .header__button {
+    margin-right: 20px;
+    position: relative;
+  }
+
+  .button-menu--icon--burger::after {
+    content: "";
+    display: block;
+    height: 32px;
+    position: absolute;
+    right: -20px;
+    top: 50%;
+    translate: -50% -50%;
+    width: 2px;
+    background: #eaeaea;
+  }
+
+  .main-menu__list {
+    margin-top: 32px;
+  }
+
+  .about__text {
+    margin: 0;
+    height: 160px;
+    line-height: 20px;
+  }
+
+  .about {
+    display: flex;
+    gap: 48px;
+  }
+
+  .about__image {
+    min-width: 50%;
+    margin-top: 0;
+    height: auto;
+  }
+
+  .main__about {
+    margin-top: 32px;
+    padding-inline: 24px;
+  }
+
+  /* меню брендов  768*/
+
+  .brand-main-menu {
+    grid-template-columns: repeat(3, 1fr);
+    height: 160px;
+    overflow: hidden;
+    padding-inline: 24px;
+    column-gap: 24px;
+    margin-top: 24px;
+    margin-left: 0;
+    transition: 0.2s;
+  }
+
+  .brand-main-menu--height {
+    height: 100%;
+  }
+
+  .brand-main-menu__list {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    align-items: center;
+    row-gap: 16px;
+    column-gap: 24px;
+    padding-left: 16px;
+    padding-left: 0;
+  }
+
+  .brand-main-menu__item {
+    width: auto;
+  }
+
+  .brand-menu__title {
+    padding-inline: 24px;
+  }
+
+  .pagination-slider {
+    display: none;
+  }
+
+  .button-arrow-scroll {
+    margin-top: 24px;
+    margin-left: 24px;
+    display: block;
+  }
+
+  .button-arrow-scroll.button--inverted::before {
+    transform: rotate(180deg);
+  }
+}
+
+/* Версия ПК */
+
+@media (min-width: 1120px) {
+  .header {
+    display: none;
+  }
+
+  .main-header__service-menu {
+    display: flex;
+  }
+
+  .main-header {
+    display: flex;
+    align-items: center;
+    margin-top: 42px;
+    margin-right: 25px;
+  }
+  .main__title {
+    margin-top: 0;
+    padding-left: 32px;
+  }
+
+  .service-menu {
+    margin-left: auto;
+  }
+
+  .main-menu__list {
+    overflow: visible;
+    flex-wrap: wrap;
+    padding-inline: 22px;
+    margin-top: 8px;
+    margin-left: 32px;
+    padding-left: 0;
+  }
+
+  .main__about {
+    margin-top: 8px;
+  }
+
+  .about.main__about {
+    padding-left: 32px;
+  }
+  .main-menu__link {
+    padding-left: 22px;
+    padding-right: 19px;
+    box-sizing: border-box;
+  }
+
+  /* меню брендов */
+
+  .brand-main-menu {
+    padding-inline: 32px;
+    column-gap: 32px;
+  }
+
+  .brand-main-menu__list {
+    grid-template-columns: repeat(4, 1fr);
+  }
 }
