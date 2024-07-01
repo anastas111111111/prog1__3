@@ -19,7 +19,7 @@
       border-radius: -6px;
       color: var(--color-gray-med);
       opacity: 0.5;
-      transition-duration: 1s;
+      transition-duration: var(--transition-duration);
     }
   }
 }

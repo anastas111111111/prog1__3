@@ -12,7 +12,7 @@
 
   &--icon {
     &--burger {
-      background-image: url(../img/burger-button.svg);
+      background-image: url(img/burger-button.svg);
 
       &::after {
         @include mobile-above {
@@ -30,27 +30,27 @@
     }
 
     &--service {
-      background-image: url(../img/remont-button.svg);
+      background-image: url(img/remont-button.svg);
     }
 
     &--search {
-      background-image: url(../img/search-button.svg);
+      background-image: url(img/search-button.svg);
     }
     &--phone {
-      background-image: url(../img/phone-button.svg);
+      background-image: url(img/phone-button.svg);
     }
     &--message {
-      background-image: url(../img/message-button.svg);
+      background-image: url(img/message-button.svg);
     }
 
     &--contact {
-      background-image: url(../img/contact-button.svg);
+      background-image: url(img/contact-button.svg);
     }
     &--clouse {
-      background-image: url(../img/side-icon-clouse.svg);
+      background-image: url(img/side-icon-clouse.svg);
     }
     &--siedebar-search {
-      background-image: url(../img/side-icon-search.svg);
+      background-image: url(img/side-icon-search.svg);
     }
   }
 

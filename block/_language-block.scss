@@ -2,7 +2,7 @@
   &__button {
     cursor: pointer;
     &:hover {
-      transition-duration: 1s;
+      transition-duration: var(--transition-duration);
       opacity: 0.5;
     }
   }

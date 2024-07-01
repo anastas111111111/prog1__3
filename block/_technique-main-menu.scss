@@ -55,7 +55,7 @@
       column-gap: 24px;
       padding-left: 16px;
       padding-left: 0;
-      transition: 0.2s;
+      transition-duration: var(--transition-duration);
     }
 
     @include tablet-above {
