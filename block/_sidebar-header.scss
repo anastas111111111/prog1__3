@@ -1,0 +1,13 @@
+.sidebar-header {
+  &__inner {
+    display: flex;
+    align-items: center;
+    margin-left: 24px;
+    margin-top: 18px;
+  }
+
+  
+  &__logo {
+    margin-left: 16px;
+  }
+}

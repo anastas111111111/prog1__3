@@ -1,0 +1,18 @@
+.sidebar-menu {
+  display: flex;
+  flex-direction: column;
+  min-width: 320px;
+  background-color: var(--color-white);
+  position: absolute;
+  top: 0;
+  left: 0;
+  min-height: 100vh;
+  z-index: 100;
+  box-shadow: -5px 0 20px 0,
+    -20px var(--color-gray-med) 20px 0 var(--color-gray-med);
+
+  &__sidebar-footer {
+    margin-top: auto;
+    padding-top: 32px;
+  }
+}

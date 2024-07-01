@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css" />
+    <title>modal-call</title>
+  </head>
+  <body>
+    <section class="modal modal--right">
+      <div class="modal__inner">
+        <h2 class="modal__title">Заказать звонок</h2>
+
+        <form class="modal__form">
+          <input
+            class="modal__input"
+            type="tel"
+            required
+            placeholder="Телефон"
+          />
+
+          <p class="modal__alert">
+            Нажимая "отправить", вы даете согласие на
+            <span class="modal__text-impotant"
+              >обработку персональных данных</span
+            >
+            и соглашаетесь с нашей
+            <span class="modal__text-impotant"
+              >политикой конфиденциальности</span
+            >
+          </p>
+          <button class="modal__button button-order" type="submit">
+            Отправить
+          </button>
+        </form>
+        <button
+          class="modal__button-clouse button-menu button-menu--icon--clouse"
+          type="button"
+        ></button>
+      </div>
+    </section>
+  </body>
+</html>

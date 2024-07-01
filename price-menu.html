@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+    <link rel="stylesheet" href="styles.css" />
+    <title>price</title>
+  </head>
+
+  <body>
+    <section class="price-menu">
+      <header class="price-menu__header">
+        <h2 class="price-menu__title">Цены на услуги</h2>
+      </header>
+
+      <div class="price-main__body">
+
+        <div class="price-main-menu price-main-menu--margin--left">
+
+          <table class="price-main-menu__table">
+            
+            <thead class="price-main-menu__head">
+              <tr class="price-main-menu__row">
+                <th class="price-main-menu__cell">Ремонтные услуги</th>
+                <th class="price-main-menu__cell">Цена</th>
+                <th class="price-main-menu__cell">Срок</th>
+                <th class="price-main-menu__cell"></th>
+              </tr>
+            </thead>
+
+            <tbody class="price-main-menu__body">
+              <tr class="price-main-menu__row">
+                <td class="price-main-menu__cell" data-label="Ремонтные услуги">
+                  Диагностика
+                </td>
+                <td class="price-main-menu__cell" data-label="Цена">
+                  Бесплатно
+                </td>
+                <td class="price-main-menu__cell" data-label="Срок">30 мин</td>
+                <td class="price-main-menu__cell" data-label="">
+                  <a class="price-main-menu__button button-order" href="#">
+                    Заказать
+                  </a>
+                </td>
+              </tr>
+
+              <tr class="price-main-menu__row">
+                <td class="price-main-menu__cell" data-label="Ремонтные услуги">
+                  Замена дисплея
+                </td>
+                <td class="price-main-menu__cell" data-label="Цена">1 000 ₽</td>
+                <td class="price-main-menu__cell" data-label="Срок">
+                  30-120 мин
+                </td>
+                <td class="price-main-menu__cell">
+                  <a class="price-main-menu__button button-order" href="#">
+                    Заказать
+                  </a>
+                </td>
+              </tr>
+              <tr class="price-main-menu__row">
+                <td class="price-main-menu__cell" data-label="Ремонтные услуги">
+                  Замена полифонического динамика
+                </td>
+                <td class="price-main-menu__cell" data-label="Цена">1 000 ₽</td>
+                <td class="price-main-menu__cell" data-label="Срок">
+                  30-120 мин
+                </td>
+                <td class="price-main-menu__cell">
+                  <a class="price-main-menu__button button-order" href="#">
+                    Заказать
+                  </a>
+                </td>
+              </tr>
+              <tr class="price-main-menu__row">
+                <td class="price-main-menu__cell" data-label="Ремонтные услуги">
+                  Тестирование с выдачей технического заключения
+                </td>
+                <td class="price-main-menu__cell" data-label="Цена">1 000 ₽</td>
+                <td class="price-main-menu__cell" data-label="Срок">
+                  30-120 мин
+                </td>
+                <td class="price-main-menu__cell">
+                  <a class="price-main-menu__button button-order" href="#">
+                    Заказать
+                  </a>
+                </td>
+              </tr>
+              <tr class="price-main-menu__row">
+                <td class="price-main-menu__cell" data-label="Ремонтные услуги">
+                  Замена программного обеспечения
+                </td>
+                <td class="price-main-menu__cell" data-label="Цена">1 000 ₽</td>
+                <td class="price-main-menu__cell" data-label="Срок">
+                  30-120 мин
+                </td>
+                <td class="price-main-menu__cell">
+                  <a class="price-main-menu__button button-order" href="#">
+                    Заказать
+                  </a>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+
+          <div class="pagination-slider"></div>
+
+          <div class="price-main-menu__pricing-info">
+            Все цены указаны с учетом НДС. Стоимость ремонта указана на
+            единичную услугу. Для получения коммерческого предложения на
+            постоянное обслуживание, оставьте заявку.
+          </div>
+
+          <a class="price-main-menu__link" href="#"
+            >Получить коммерческое предложение</a
+          >
+        </div>
+      </div>
+    </section>
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="js/main.js"></script>
+  </body>
+</html>

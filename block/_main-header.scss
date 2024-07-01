@@ -1,0 +1,15 @@
+.main-header {
+  @include tablet-above {
+    display: flex;
+    align-items: center;
+    margin-top: 42px;
+    margin-right: 25px;
+  }
+  &__service-menu {
+    display: none;
+
+    @include tablet-above {
+      display: flex;
+    }
+  }
+}
